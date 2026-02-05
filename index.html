@@ -1,0 +1,140 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bio Link - Social Media</title>  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">  <style>
+    :root {
+      --bg-color: #f4f4f4;
+      --card-color: #ffffff;
+      --text-color: #111111;
+    }
+
+    body.dark {
+      --bg-color: #0f0f0f;
+      --card-color: #1c1c1c;
+      --text-color: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: var(--bg-color);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: var(--text-color);
+      transition: 0.3s;
+    }
+
+    .logo-custom {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .logo-custom img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 3px solid var(--text-color);
+    }
+
+    .logo-custom h1 {
+      margin-top: 10px;
+      font-size: 22px;
+    }
+
+    .logo-custom p {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 420px;
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .card {
+      background: var(--card-color);
+      padding: 16px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      cursor: pointer;
+      transition: 0.25s;
+    }
+
+    .card:hover {
+      transform: scale(1.04);
+    }
+
+    .card i {
+      font-size: 28px;
+      width: 35px;
+      text-align: center;
+    }
+
+    .instagram { color: #E1306C; }
+    .tiktok { color: #000000; }
+    .youtube { color: #FF0000; }
+
+    body.dark .tiktok { color: #ffffff; }
+
+    .mode-btn {
+      margin-top: 25px;
+      padding: 10px 18px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    footer {
+      margin: 30px 0;
+      font-size: 13px;
+      opacity: 0.6;
+    }
+  </style></head>
+<body>  <div class="logo-custom">
+    <img src="https://i.ibb.co.com/RThm83kL/20250811-214031.png">
+    <h1>Aban130</h1>
+  </div>  <div class="container">
+    <!-- GANTI LINK AKUN DI SINI -->
+    <div class="card" onclick="openLink('https://www.instagram.com/aban_130?igsh=YzljYTk1ODg3Zg%3D%3D')">
+      <i class="fab fa-instagram instagram"></i>
+      <span>Instagram</span>
+    </div><div class="card" onclick="openLink('https://https://www.tiktok.com/@aban1300?_r=1&_d=e42294h810e38l&sec_uid=MS4wLjABAAAABDu28M2uYDgUNh2699UyExt39Pny_In1kbUJmUoEXnZq2_wtjPQemFT2Teg_n3nv&share_author_id=7254090429392946182&sharer_language=id&source=h5_t&u_code=e908a41e8i83cb&timestamp=1745139006&user_id=7254090429392946182&sec_user_id=MS4wLjABAAAABDu28M2uYDgUNh2699UyExt39Pny_In1kbUJmUoEXnZq2_wtjPQemFT2Teg_n3nv&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7443102677368375095&share_link_id=b5090310-3048-4281-bcc8-04f9988373ff&share_app_id=1180&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb0229&social_share_type=5&enable_checksum=1)">
+  <i class="fab fa-tiktok tiktok"></i>
+  <span>TikTok</span>
+</div>
+
+<div class="card" onclick="openLink('https://youtube.com/@aban130_gaming?si=XQyE46dPJ5jUovBx')">
+  <i class="fab fa-youtube youtube"></i>
+  <span>YouTube</span>
+</div>
+
+  </div><button class="mode-btn" onclick="toggleMode()">🌙 / ☀️ Mode</button>
+
+  <footer>
+    © 2026 • Aban130 Official 
+  </footer>  <script>
+    function openLink(url) {
+      window.open(url, '_blank');
+    }
+
+    function toggleMode() {
+      document.body.classList.toggle('dark');
+      document.body.classList.toggle('bright');
+    }
+  </script></body>
+</html>
